@@ -15,7 +15,7 @@ y_train = np.ravel(y_train)
 y_test = np.ravel(y_test)
 
 #rf_classifier = ensemble.RandomForestClassifier(n_jobs = -1)
-rf_classifier = ensemble.RandomForestClassifier(n_jobs = -1, n_estimators=200, criterion="entropy")
+rf_classifier = ensemble.RandomForestClassifier(n_estimators=200, criterion="entropy")
 
 #--Train the model
 rf_classifier.fit(X_train, y_train)
